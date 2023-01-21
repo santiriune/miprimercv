@@ -1,0 +1,247 @@
+:root
+{
+--color-izquierda: rgb(121, 118, 120);
+--color-derecha: white;
+}
+
+body
+{
+background: rgb(190, 198, 199);
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+font-family:Arial, Helvetica, sans-serif
+}    
+.container
+{
+position: relative;
+width: 100%;
+max-width: 1000px; 
+min-height: 1000px;  
+background: white;
+margin: 50px;
+display:flex;
+grid-template-columns: 1fr 2fr;
+box-shadow: 0 35px 55px rgba(43, 43, 43);
+}
+
+.container .lado_izquierdo
+{
+position: relative;
+background: rgb(121, 118, 120);
+padding: 40px;
+background-color: var(--color-izquierda);
+}
+
+.texto_del_perfil
+{
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 20px;
+border-bottom: 1px solid white;
+}
+
+.texto_del_perfil .imagen_de_perfil
+{position: relative;
+width: 200px;
+height:200px;
+border-radius: 50%;
+overflow: hidden;   
+}
+
+.texto_del_perfil .imagen_de_perfil img
+{position: absolute;
+top: 0;    
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.texto_del_perfil h2
+{color: white;
+font-size: 1.5em;
+margin-top: 20px;
+text-transform: uppercase;
+text-align: center;
+font-weight: 600;
+line-height: 1.4em;    
+}
+
+.texto_del_perfil h2 span
+{
+font-size: 0.8em;
+font-weight: 300;
+}
+
+.info_de_contacto{
+padding-top: 40px;
+}
+
+.titulo{
+color: white;
+text-transform: uppercase;
+font-weight: 600;
+letter-spacing: 1px;
+margin-bottom: 20px;
+}
+
+.info_de_contacto ul
+{
+position: relative;
+}
+
+.info_de_contacto ul li
+{
+position: relative;
+list-style: none;
+margin: 10px 0;
+cursor: pointer;
+}
+
+.info_de_contacto ul li .icono
+{
+display: inline-block;
+width: 30px;
+font-size: 18px;
+color: rgb(239, 239, 243);
+}
+
+.info_de_contacto ul li span
+{
+color:white;
+font-weight: 300;   
+}
+
+.info_de_contacto_formacion li
+{
+margin-bottom: 15px;
+}
+
+.info_de_contacto_formacion h5
+{
+color:rgb(46, 45, 45);
+
+}
+
+.info_de_contacto_formacion h4:nth-child(2)
+{
+color:white;
+font-weight: 500;
+}
+
+.info_de_contacto_formacion h4
+{
+color:white;
+font-weight:bold;
+}
+
+.info_de_contacto_idiomas ul li span
+{
+color: white;
+position:relative;
+width: 100%;
+height:6px ;
+}
+
+.container .lado_derecho
+{
+position: relative;
+background: white;
+padding: 40px;
+background-color: var(--color-derecha);
+}
+
+.perfil
+{
+margin-bottom: 70px;
+}
+
+.perfil :last-child
+{
+margin-bottom: 0;
+}
+
+h5 {font-weight: bold;
+
+}
+
+.titulo2
+{
+font-weight: bold;
+font-size: 20px;
+text-decoration: underline;
+color: black;
+text-transform: uppercase;
+letter-spacing: 1px;
+margin-bottom: 2rem;
+}
+
+p
+{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: black;}
+
+.perfil .experiencia
+{
+display: flex;
+flex-direction: row;
+margin: 20px 0;
+}
+
+.perfil .experiencia .fecha
+{
+min-width: 150px;
+}
+
+h3
+{
+font-weight: bold;
+
+}
+
+img
+{
+max-width: 200px;
+max-height: 200px;
+}
+
+.tarjeta
+{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+margin: 0 3px;
+flex-basis: 150px;
+flex-grow: 1;
+transition: 200ms;
+box-shadow: 0px 0px 3px 3px rgb(34, 33, 33);
+transition: 200ms;
+user-select: none;
+}
+
+#contenedor-tarjetas
+{
+display: flex;
+flex-wrap: wrap;
+}
+
+.tarjeta p
+{
+background-color: rgb(233, 219, 228);
+padding: 20px;
+font-size: 10px;
+}
+
+
+.tarjeta:hover
+{
+transform: scale(1.05);
+}
+
+
+
+
